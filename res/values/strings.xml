@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Alarm</string>
+    <string name="add_new_alarm">Dodaj nowy alarm</string>
+    <string name="title_activity_set_alarm">Ustaw alarm</string>
+    <string name="title_activity_wake_up">Wstawaj!</string>
+    <string name="title_activity_wake_up2">Drzemka</string>
+    <string name="title_activity_disable_alarm">Wyłącz alarm</string>
+    <string name="title_activity_riddle">Aby wyłączyć alarm rozwiąż zagadkę</string>
+    <string name="disable_alarm">Wyłącz alarm</string>
+ 	<string name="wake_up_text">Potrząśnij telefonem aby ustawić drzemkę</string>
+ 	<string name="wake_up2_text">
+ 	    Ustawiono drzemkę.
+ 	    Potząśnij mocniej telefonem aby wyłączyć alarm
+ 	   </string>
+ 	<string name="snooze_priority">Priorytet drzemki</string>
+ 	<string name="disable_priority">Priorytet wyłączenia alarmu</string>
+ 	<string name="riddle">Dodaj zagadkę</string>
+ 	<string name="location">Alarm dla lokalizacji</string>
+ 	<string name="save">Zapisz</string>
+ 	<string name="delete">Usuń</string>
+ 	<string name="use_my_location">Użyj mojej lokalizacji</string>
+ 	<string name="location_x">Długość:</string>
+ 	<string name="location_y">Szerokość:</string>
+ 	<string name="location_unavaivable">Nie mozna odczytać lokalizacji</string>
+ 	<string name="location_aut_of_date">
+	 	Lokalizacja może być nieaktualna.
+	 	Odczekaj kilka sekund i spróbuj ponownie.
+ 	</string>
+</resources>

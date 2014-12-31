@@ -1,0 +1,200 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}" >
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ToggleButton
+        android:id="@+id/mon"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/timePicker"
+        android:layout_marginTop="15dp"
+        android:textOff="Pon"
+        android:textOn="Pon" />
+
+    <ToggleButton
+        android:id="@+id/tue"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/mon"
+        android:layout_alignBottom="@+id/mon"
+        android:layout_toRightOf="@+id/mon"
+        android:textOff="Wto"
+        android:textOn="Wto" />
+
+    <ToggleButton
+        android:id="@+id/wed"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tue"
+        android:layout_alignBottom="@+id/tue"
+        android:layout_toRightOf="@+id/tue"
+        android:textOff="Śro"
+        android:textOn="Śro" />
+
+    <ToggleButton
+        android:id="@+id/thu"
+        android:layout_width="52dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/wed"
+        android:layout_toRightOf="@+id/wed"
+        android:textOff="Czw"
+        android:textOn="Czw" />
+
+    <ToggleButton
+        android:id="@+id/sat"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fri"
+        android:layout_alignBottom="@+id/fri"
+        android:layout_toRightOf="@+id/fri"
+        android:textOff="Sob"
+        android:textOn="Sob" />
+
+    <ToggleButton
+        android:id="@+id/sun"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/sat"
+        android:layout_alignBottom="@+id/sat"
+        android:layout_toRightOf="@+id/sat"
+        android:textOff="Nie"
+        android:textOn="Nie" />
+
+    <ToggleButton
+        android:id="@+id/fri"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thu"
+        android:layout_toRightOf="@+id/thu"
+        android:textOff="Pią"
+        android:textOn="Pią" />
+
+    <SeekBar
+        android:id="@+id/snoozeSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1" />
+
+    <SeekBar
+        android:id="@+id/disableAlarmSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView2" />
+
+    <CheckBox
+        android:id="@+id/riddleCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/disableAlarmSeekBar"
+        android:layout_marginTop="14dp"
+        android:text="@string/riddle" />
+
+    <CheckBox
+        android:id="@+id/locationCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/riddleCheckBox"
+        android:text="@string/location" />
+
+    <EditText
+        android:id="@+id/yEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/xEditText"
+        android:layout_alignBottom="@+id/xEditText"
+        android:layout_alignLeft="@+id/deleteButton"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/saveButton"
+        android:layout_alignBottom="@+id/saveButton"
+        android:layout_alignRight="@+id/locationButton"
+        android:layout_toRightOf="@+id/saveButton"
+        android:text="@string/delete" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/locationCheckBox"
+        android:text="@string/save" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wed"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/snooze_priority" 
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+       
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/disable_priority"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/locationButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/locationCheckBox"
+        android:layout_alignParentRight="true"
+        android:text="@string/use_my_location" />
+
+    <EditText
+        android:id="@+id/xEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_toLeftOf="@+id/textView4"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:text="@string/location_x"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/yEditText"
+        android:layout_below="@+id/locationButton"
+        android:text="@string/location_y"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>
